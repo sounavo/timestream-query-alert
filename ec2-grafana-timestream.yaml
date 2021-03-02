@@ -74,7 +74,7 @@ Resources:
             wget https://storage.googleapis.com/integration-artifacts/grafana-iot-sitewise-datasource/0.0.1/main/latest/grafana-iot-sitewise-datasource-0.0.1.linux_amd64.zip
             unzip grafana-iot-sitewise-datasource-0.0.1.linux_amd64.zip -d /usr/share/grafana/plugins-bundled
             echo '===== install Timestream datasource ====='
-            wget "https://grafana.com/api/plugins/grafana-timestream-datasource/versions/1.2.0/download?os=linux&arch=amd64"
+            wget -O grafana-timestream-datasource-1.2.0.linux_amd64.zip "https://grafana.com/api/plugins/grafana-timestream-datasource/versions/1.2.0/download?os=linux&arch=amd64"
             unzip grafana-timestream-datasource-1.2.0.linux_amd64.zip -d /usr/share/grafana/plugins-bundled
 
             sudo systemctl start grafana-server
